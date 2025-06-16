@@ -1,2 +1,2 @@
 # thetinfoilhat.github.io
-Hi guys!
+Hi everyone!
