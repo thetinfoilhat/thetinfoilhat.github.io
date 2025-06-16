@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Aiden Xie</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,100 +16,54 @@
 
         body {
             font-family: 'Raleway', sans-serif;
-            background-color: #fafafa;
-            color: #2c2c2c;
+            background-color: #fff;
+            color: #000;
             line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
             padding: 40px 20px;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 80px;
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         h1 {
             font-size: 2.5rem;
-            font-weight: 300;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
+            font-weight: 600;
+            margin-bottom: 30px;
         }
 
-        .subtitle {
-            font-size: 1rem;
-            font-weight: 400;
-            color: #666;
-            letter-spacing: 1px;
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.8;
         }
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 60px;
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
         }
 
         .project {
-            background-color: #fff;
-            padding: 30px;
-            border: 1px solid #e0e0e0;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+            line-height: 1.8;
         }
 
-        .project::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.05), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            border-color: #ccc;
-        }
-
-        .project:hover::before {
-            left: 100%;
-        }
-
-        .project h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
-        }
-
-        .project p {
-            font-size: 0.95rem;
-            font-weight: 300;
-            color: #555;
-            line-height: 1.7;
-        }
-
-        .project-link {
-            display: inline-block;
-            margin-top: 15px;
-            font-size: 0.85rem;
-            color: #888;
+        .project a {
+            color: #0066cc;
             text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 400;
+            font-weight: 500;
+            transition: color 0.2s ease;
         }
 
-        .project-link:hover {
+        .project a:hover {
+            color: #0052a3;
+            text-decoration: underline;
+        }
+
+        .project-description {
             color: #333;
         }
 
@@ -117,10 +71,13 @@
             h1 {
                 font-size: 2rem;
             }
-            
-            .projects {
-                grid-template-columns: 1fr;
-                gap: 20px;
+
+            .intro, .project {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -128,46 +85,34 @@
 <body>
     <div class="container">
         <header>
-            <h1>PORTFOLIO</h1>
-            <p class="subtitle">Building things that matter</p>
+            <h1>Aiden Xie</h1>
         </header>
 
-        <div class="projects">
-            <div class="project">
-                <h3>decademy.app</h3>
-                <p>DECA practice platform with 50k+ questions serving 6k+ users across 32 countries. Comprehensive test prep for future business leaders.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <p class="intro">
+            Hi! I'm a developer passionate about building tools that make a difference to both me and others.
+            Solutions that start with me don't have to end with me. Let's build something great. 
+        </p>
 
-            <div class="project">
-                <h3>Eyerobic</h3>
-                <p>Assistive headband using CV/ML to help visually impaired athletes swim and run independently by detecting pool lanes and sidewalk boundaries.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <h2>What I'm working on:</h2>
 
-            <div class="project">
-                <h3>Glint</h3>
-                <p>Fashion search engine at glintapparel.com using image recognition, NLP, and Pinterest integration to help users find their perfect style match.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <div class="project">
+            <a href="https://eyerobic.com">Eyerobic</a> <span class="project-description">- assistive headband using CV/ML to help visually impaired athletes swim and run independently by detecting pool lanes and sidewalk boundaries.</span>
+        </div>
 
-            <div class="project">
-                <h3>scio.ly</h3>
-                <p>Science Olympiad practice tool generating interactive tests for any event. Trusted by 8k+ students to prepare for competitions nationwide.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <div class="project">
+            <a href="https://glintapparel.com">Glint</a> <span class="project-description">- fashion search engine at glintapparel.com using image recognition, NLP, and Pinterest integration to help users find their perfect style match.</span>
+        </div>
 
-            <div class="project">
-                <h3>EcoSense</h3>
-                <p>Environmental education app built with React Native. Winner of the 2024 Congressional App Challenge for innovative climate awareness.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <div class="project">
+            <a href="https://scio.ly">scio.ly</a> <span class="project-description">- practice tool for Science Olympiad generating interactive tests for any event. Trusted by 8k+ students to prepare for competitions nationwide.</span>
+        </div>
 
-            <div class="project">
-                <h3>Crochet</h3>
-                <p>AI pipeline builder that transforms natural language into automated workflows. Create complex data transformations with simple, intuitive inputs.</p>
-                <a href="#" class="project-link">Visit Project →</a>
-            </div>
+        <div class="project">
+            <a href="https://decademy.app">decademy.app</a> <span class="project-description">- DECA practice platform with 50k+ questions serving 6k+ users across 32 countries. Comprehensive test prep for future business leaders.</span>
+        </div>
+
+        <div class="project">
+            <a href="https://github.com/NapervilleASK/congressionalapp">EcoSense</a> <span class="project-description">- environmental education app built with React Native. Winner of the 2024 Congressional App Challenge for innovative climate awareness.</span>
         </div>
     </div>
 </body>
