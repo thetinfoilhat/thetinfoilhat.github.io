@@ -30,7 +30,13 @@
         h1 {
             font-size: 2.5rem;
             font-weight: 600;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #333;
+            margin-bottom: 35px;
         }
 
         .intro {
@@ -43,6 +49,10 @@
             font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 25px;
+        }
+
+        .section {
+            margin-bottom: 45px;
         }
 
         .project {
@@ -67,12 +77,16 @@
             color: #333;
         }
 
+        .experience-title {
+            font-weight: 600;
+        }
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 2rem;
             }
 
-            .intro, .project {
+            .subtitle, .intro, .project {
                 font-size: 1rem;
             }
 
@@ -86,25 +100,72 @@
     <div class="container">
         <header>
             <h1>Aiden Xie</h1>
+            <div class="subtitle">Georgia Tech B.S. Computer Science '28</div>
         </header>
 
-        <h2>What I'm working on:</h2>
+        <section class="section">
+            <h2>What I'm doing:</h2>
 
-        <div class="project">
-            <a href="https://eyerobic.com">Eyerobic</a> <span class="project-description">- assistive headband using CV/ML to help visually impaired athletes swim and run independently by detecting pool lanes and sidewalk boundaries.</span>
-        </div>
+            <div class="project">
+                <span class="experience-title">Proximitty (W26)</span> <span class="project-description">- helped build agents for business loans.</span>
+            </div>
 
-        <div class="project">
-            <a href="https://scio.ly">Scio.ly</a> <span class="project-description">- practice tool for Science Olympiad, generating interactive tests for any event. Trusted by 60k+ students to prepare for competitions nationwide.</span>
-        </div>
+            <div class="project">
+                <span class="experience-title">Square Four LLC</span> <span class="project-description">- selling printers and AI-native inventory optimization.</span>
+            </div>
 
-        <div class="project">
-            <a href="https://haku.cards">Haku</a> <span class="project-description">- debate card search platform using Meilisearch and a custom parsing engine to help users search less and debate more. More features coming soon.</span>
-        </div>
-        
-        <div class="project">
-            <a href="https://github.com/NapervilleASK/congressionalapp">EcoSense</a> <span class="project-description">- environmental education app built with React Native. Winner of the 2024 Congressional App Challenge for innovative climate awareness.</span>
-        </div>
+            <div class="project">
+                <a href="https://eyerobic.com">Eyerobic</a> <span class="project-description">- assistive headband using CV/ML to help visually impaired athletes swim and run independently by detecting pool lanes and sidewalk boundaries.</span>
+            </div>
+
+            <div class="project">
+                <a href="https://scio.ly">Scio.ly</a> <span class="project-description">- practice tool for Science Olympiad, generating interactive tests for any event. Trusted by 60k+ students to prepare for competitions nationwide.</span>
+            </div>
+
+            <div class="project">
+                <a href="https://haku.cards">Haku</a> <span class="project-description">- debate card search platform using Meilisearch and a custom parsing engine to help users search less and debate more. More features coming soon.</span>
+            </div>
+
+            <div class="project">
+                <a href="https://github.com/NapervilleASK/congressionalapp">EcoSense</a> <span class="project-description">- environmental education app built with React Native. Winner of the 2024 Congressional App Challenge for innovative climate awareness.</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>What I did:</h2>
+
+            <div class="project">
+                <span class="experience-title">Conrad Challenge Finalist</span> <span class="project-description">- top ~5 of ~5,000 competitors.</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">Blue Ocean Top 30</span> <span class="project-description">- top 30 of 23,000 teams.</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">Provisional patent (USPTO)</span> <span class="project-description">- CV/ML assistive guidance for visually impaired swimmers.</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">Science Olympiad State Champion 3x</span> <span class="project-description">- 1st of ~50+ state teams, three years running.</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">National Merit Finalist</span> <span class="project-description">- top ~15,000 of ~1.5M PSAT takers (~top 1%).</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">USNCO Nationals Qualifier</span> <span class="project-description">- top ~1,000 of ~16,000 chemistry students (~top 6%).</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">DECA ICDC Qualifier</span> <span class="project-description">- advanced to international championship of ~20,000+ competitors.</span>
+            </div>
+
+            <div class="project">
+                <span class="experience-title">Congressional App Challenge Winner</span> <span class="project-description">- IL-14 district.</span>
+            </div>
+        </section>
     </div>
 </body>
 </html> 
